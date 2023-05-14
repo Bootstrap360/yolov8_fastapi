@@ -26,3 +26,8 @@ bash run_docker.sh
 ## Fast API
 
 Documentation on how to get stated with FastAPI can be found [here](https://fastapi.tiangolo.com/).
+
+
+## YOLOv8
+
+https://github.com/ultralytics/ultralytics
