@@ -50,8 +50,6 @@ async def predict(
     render: bool = True,
     model_name: Models = Models.yolov8s,
 ):
-    # get the size of the file
-    file.file.seek(0)
     bytes = BytesIO(await file.read())
 
     if not bytes.getvalue() or len(bytes.getvalue()) == 0:

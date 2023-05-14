@@ -9,20 +9,20 @@ from app.models import Models, Result
 
 
 def main():
-    img_path = "/tmp/zidane.jpg"
-    if not os.path.exists(img_path):
-        # download image from 'https://ultralytics.com/images/zidane.jpg'
-        url = "https://ultralytics.com/images/zidane.jpg"
-        r = requests.get(url, allow_redirects=True)
-        with open(img_path, "wb") as f:
-            f.write(r.content)
+    # img_path = "/tmp/zidane.jpg"
+    # if not os.path.exists(img_path):
+    #     # download image from 'https://ultralytics.com/images/zidane.jpg'
+    #     with open(img_path, "wb") as f:
+    #         f.write(r.content)
 
+    url = "https://ultralytics.com/images/zidane.jpg"
+    r = requests.get(url, allow_redirects=True)
     url = "http://localhost:8061/predict"
 
     # Perform object detection
 
     for model in Models:
-        image = open(img_path, "rb")
+        image = r.content
         files = {"file": image}
         # print(model.name)
 

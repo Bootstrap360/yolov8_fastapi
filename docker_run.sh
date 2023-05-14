@@ -2,7 +2,7 @@
 
 # Run docker with port forwarding and attach to bash
 # set container id
-docker run --name yolov8-fastapi -it --rm -p 8061:8061 -v ./:/code yolov8-fastapi:latest /bin/bash
+docker run --name yolov8-fastapi -it --rm -p 8061:8061 yolov8-fastapi:latest
 
 # docker run -it --rm -p 8061:8061 -v ./app:/code/app  yolov8-fastapi:latest
 
