@@ -1,8 +1,7 @@
 import os
 
-from ultralytics import YOLO
-
 import models
+from ultralytics import YOLO
 
 
 def main():
